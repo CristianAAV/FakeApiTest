@@ -1,0 +1,37 @@
+{
+	"info": {
+		"_postman_id": "bb26025e-4ca3-4e34-8716-a0e8e8e8bf8b",
+		"name": "Numeros y Echo API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "38826606"
+	},
+	"item": [
+		{
+			"name": "Obtener Números",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://127.0.0.1:8000/numeros"
+			},
+			"response": []
+		},
+		{
+			"name": "Echo de Datos",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"mensaje\": \"Hola FastAPI!\",\n  \"id\": 123\n}"
+				},
+				"url": "https://127.0.0.1:8000/echo"
+			},
+			"response": []
+		}
+	]
+}
